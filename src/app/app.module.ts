@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -16,7 +17,10 @@ import { from } from 'rxjs';
     NavbarComponent
   ],
   imports: [
-    BrowserModule, StoreModule.forRoot({}), AppRoutingModule
+    BrowserModule, 
+    StoreModule.forRoot({}), 
+    StoreDevtoolsModule.instrument(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
