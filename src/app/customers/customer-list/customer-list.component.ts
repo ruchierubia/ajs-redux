@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import * as customerActions from '../state/customer.actions';
-import * as fromCustomer from '../state/costumer.reducer';
+import * as fromCustomer from '../state/customer.reducer';
 import { Customer } from '../customer.model';
 
 @Component({

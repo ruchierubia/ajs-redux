@@ -7,7 +7,7 @@ import { StoreModule } from '@ngrx/store';
 
 import { EffectsModule, Actions } from '@ngrx/effects';
 
-import { customerReducer } from './state/costumer.reducer';
+import { customerReducer } from './state/customer.reducer';
 import { CustomerEffect } from './state/customer.effect';
 
 import { CustomerComponent } from './customer/customer.component';
