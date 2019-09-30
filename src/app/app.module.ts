@@ -17,8 +17,8 @@ import { from } from 'rxjs';
     NavbarComponent
   ],
   imports: [
-    BrowserModule, 
-    StoreModule.forRoot({}), 
+    BrowserModule,
+    StoreModule.forRoot({}),
     StoreDevtoolsModule.instrument(),
     AppRoutingModule
   ],

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { ReactiveFormsModule, FormsModule } from "@angular/forms";
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { StoreModule } from '@ngrx/store';
 
@@ -12,7 +12,7 @@ import { CustomerAddComponent } from './customer-add/customer-add.component';
 import { CustomerEditComponent } from './customer-edit/customer-edit.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 
-const customerRoutes: Routes = [{path: "", component: CustomerComponent}]
+const customerRoutes: Routes = [{path: '', component: CustomerComponent}];
 
 
 @NgModule({
@@ -21,7 +21,7 @@ const customerRoutes: Routes = [{path: "", component: CustomerComponent}]
     CommonModule, RouterModule.forChild(customerRoutes),
     ReactiveFormsModule,
     FormsModule,
-    StoreModule.forFeature("customers", customerReducer)
+    StoreModule.forFeature('customers', customerReducer)
   ]
 })
 export class CustomersModule { }
