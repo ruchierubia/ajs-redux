@@ -8,7 +8,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
-import { from } from 'rxjs';
+import {
+  StoreRouterConnectingModule,
+  routerReducer,
+  RouterStateSerializer
+} from '@ngrx/router-store';
+
+import { CustomSerializer } from './shared/utils';
 
 @NgModule({
   declarations: [
@@ -18,13 +24,15 @@ import { from } from 'rxjs';
   ],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({}),
+    StoreModule.forRoot({
+      router : routerReducer
+    }),
     StoreDevtoolsModule.instrument(),
     AppRoutingModule,
     HttpClientModule,
     EffectsModule.forRoot([])
   ],
-  providers: [],
+  providers: [ {provide: RouterStateSerializer, useClass : CustomSerializer}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
