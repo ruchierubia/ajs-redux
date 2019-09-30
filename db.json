@@ -15,18 +15,25 @@
       "id": 2
     },
     {
+      "name": "Test 1",
+      "phone": "test number 1",
+      "address": "cebu 1",
+      "membership": "Basic",
+      "id": 4
+    },
+    {
       "name": "",
       "phone": "",
       "address": "",
       "membership": "",
-      "id": 3
+      "id": 5
     },
     {
-      "name": "Test 1",
-      "phone": "test number 1",
-      "address": "cebu",
-      "membership": "Basic",
-      "id": 4
+      "name": "Test 2 name",
+      "phone": "222222",
+      "address": "Test 2 address",
+      "membership": "Platinum",
+      "id": 6
     }
   ]
 }
